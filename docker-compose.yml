@@ -1,0 +1,13 @@
+
+services:
+  cypress:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - CYPRESS_COMMAND=run # Default to "run"; user can override
+      - CYPRESS_BROWSER=chrome # Default to "chrome"; user can override
+    volumes:
+      - .:/app
+    tty: true # Required for interactive mode
+    command: ["cypress"] # Default command to run Cypress

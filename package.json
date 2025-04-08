@@ -1,0 +1,32 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:qa": "npx cypress run --env environmentName=qa",
+    "test:run:chrome": "docker-compose run -e CYPRESS_BROWSER=chrome cypress --env environmentName=qa",
+    "test:run:electron": "docker-compose run -e CYPRESS_BROWSER=electron cypress --env environmentName=qa",
+    "test:open:chrome": "docker-compose run -e CYPRESS_COMMAND=open -e CYPRESS_BROWSER=chrome cypress",
+    "test:open:electron": "docker-compose run -e CYPRESS_COMMAND=open -e CYPRESS_BROWSER=electron cypress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cypress/grep": "^4.1.0",
+    "@eslint/js": "^9.19.0",
+    "@faker-js/faker": "^9.5.0",
+    "cypress": "^14.0.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-multi-reporters": "^2.0.4",
+    "eslint": "^9.19.0",
+    "eslint-plugin-chai-friendly": "^1.0.1",
+    "eslint-plugin-cypress": "^4.1.0",
+    "globals": "^15.14.0",
+    "mocha-junit-reporter": "^2.2.1"
+  }
+}

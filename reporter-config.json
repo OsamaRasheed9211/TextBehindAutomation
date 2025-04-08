@@ -1,0 +1,18 @@
+{
+  "reporterEnabled": "cypress-mochawesome-reporter, mocha-junit-reporter",
+  "mochaJunitReporterReporterOptions": {
+    "mochaFile": "cypress/results/junit/results-[hash].xml",
+    "toConsole": true
+  },
+  "cypressMochawesomeReporterReporterOptions": {
+    "reportDir": "cypress/results/cypress-mochawesome-reporter",
+    "reportFilename": "Test_Report_[datetime]",
+    "overwrite": false,
+    "charts": true,
+    "reportTitle": "Test Report",
+    "reportPageTitle": "Test Report",
+    "embeddedScreenshots": true,
+    "inlineAssets": true,
+    "timestamp": "longDate"
+  }
+}

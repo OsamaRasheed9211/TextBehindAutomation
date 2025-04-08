@@ -1,0 +1,22 @@
+
+# This ignores all files with the .log extension in any directory.
+**/*.log
+
+# These files are specific to macOS and are not relevant for version control.
+.DS_Store       
+
+# This ignores the .vscode directory, which contains workspace-specific settings for Visual Studio Code (e.g., extensions, debug configurations).
+.vscode
+
+
+# Dependency directory
+node_modules
+cypress/videos
+cypress/screenshots
+cypress/reports
+cypress/results
+cypress/downloads
+
+# Values in here will overwrite conflicting environment variables in your Cypress configuration.
+# This file might contain sensitive information (e.g., API keys, passwords), so it should not be committed to version control.
+cypress.env.json
