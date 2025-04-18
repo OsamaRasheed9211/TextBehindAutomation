@@ -3,7 +3,7 @@ export default class HeaderComponent {
 
     /**
      * Getter for the "My Account" icon in the header.
-     * This is usually a user avatar image that opens a dropdown or account menu when clicked.
+     * This is usually a user avatar image that opens a dropdown or account menu when clicked.!
      */
     get myAccountIcon() { 
         return cy.get('img.w-40px.h-40px.h-lg-50px.w-lg-50px[alt="user-img"]'); 
